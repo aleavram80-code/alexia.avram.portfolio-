@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Alexia Avram</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <div class="page-overlay" id="pageOverlay"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <canvas id="grain" class="grain"></canvas>
+
+  <header class="nav scrolled" id="nav">
+    <a class="nav-logo" href="index.html">Alexia Avram</a>
+    <nav class="nav-links">
+      <a href="index.html"  class="nav-link">Home</a>
+      <a href="about.html"  class="nav-link active">About</a>
+      <a href="work.html"   class="nav-link">Progetti</a>
+    </nav>
+    <a href="assets/cv/Alexia_Avram_CV.pdf" target="_blank" class="btn-cv">Download CV</a>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mob-menu" id="mobMenu">
+    <ul>
+      <li><a href="index.html"  class="mob-link">Home</a></li>
+      <li><a href="about.html"  class="mob-link">About</a></li>
+      <li><a href="work.html"   class="mob-link">Progetti</a></li>
+      <li><a href="assets/cv/Alexia_Avram_CV.pdf" target="_blank" class="mob-link">Download CV</a></li>
+    </ul>
+  </div>
+
+  <!-- PAGE HEADER -->
+  <div class="page-header">
+    <div class="page-header-inner">
+      <p class="label">Chi sono</p>
+      <h1 class="page-title">About</h1>
+    </div>
+  </div>
+
+  <!-- INTRO + PHOTO -->
+  <section class="about-intro">
+    <div class="about-intro-inner">
+      <div class="about-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/profile/photo.png" alt="Alexia Avram" loading="lazy" decoding="async"/>
+        </div>
+        <div class="photo-tag"><span class="tag-pulse"></span>Pescara, Italia</div>
+      </div>
+      <div class="about-text reveal">
+        <h2 class="about-heading">Graphic e Web Designer</h2>
+        <p>Solida formazione in Graphic Design e Web Design, orientata alla brand identity e alla comunicazione visiva, branding, 3D e video. Approccio versatile tra stili eleganti e soluzioni bold e d'impatto. Forte attenzione ai dettagli, efficienza esecutiva e capacità di interpretare le esigenze del cliente.</p>
+        <p>Integro competenze nell'utilizzo degli strumenti di Intelligenza Artificiale applicati al design. Alla ricerca di una prima esperienza strutturata in un'agenzia creativa.</p>
+        <div class="about-pills">
+          <span>Italiano — Madrelingua</span>
+          <span>Inglese — C1 <em>(in corso)</em></span>
+          <span>Spagnolo — C1 <em>(in corso)</em></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills-section">
+    <div class="skills-inner">
+      <div class="skills-col reveal">
+        <h3 class="skills-cat">Design</h3>
+        <div class="skill-list">
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Adobe Illustrator</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Adobe Photoshop</span><span class="skill-pct">90%</span></div><div class="skill-bar"><div class="skill-fill" data-w="90"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Figma</span><span class="skill-pct">70%</span></div><div class="skill-bar"><div class="skill-fill" data-w="70"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Adobe InDesign</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Adobe Premiere</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Adobe Dimension</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Blender</span><span class="skill-pct">60%</span></div><div class="skill-bar"><div class="skill-fill" data-w="60"></div></div></div>
+        </div>
+      </div>
+      <div class="skills-col reveal">
+        <h3 class="skills-cat">Web &amp; Altro</h3>
+        <div class="skill-list">
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">WordPress</span><span class="skill-pct">75%</span></div><div class="skill-bar"><div class="skill-fill" data-w="75"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">HTML &amp; CSS</span><span class="skill-pct">80%</span></div><div class="skill-bar"><div class="skill-fill" data-w="80"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">JavaScript</span><span class="skill-pct">65%</span></div><div class="skill-bar"><div class="skill-fill" data-w="65"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Strumenti AI</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Canva</span><span class="skill-pct">85%</span></div><div class="skill-bar"><div class="skill-fill" data-w="85"></div></div></div>
+          <div class="skill-row"><div class="skill-row-top"><span class="skill-name">Notion</span><span class="skill-pct">55%</span></div><div class="skill-bar"><div class="skill-fill" data-w="55"></div></div></div>
+        </div>
+        <h3 class="skills-cat" style="margin-top:2.5rem">Soft Skills</h3>
+        <div class="soft-grid">
+          <span>Problem Solving</span><span>Leadership</span><span>Multitasking</span>
+          <span>Flessibilità</span><span>Team Work</span><span>Gestione Stress</span>
+          <span>Apprendimento Autonomo</span><span>Adattamento</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="timeline-inner">
+      <div class="reveal">
+        <p class="label">Percorso</p>
+        <h2 class="section-title">Esperienze &amp;<br/><em>Formazione</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-group reveal">
+          <div class="tl-group-label">Esperienze</div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024 — in corso</div>
+            <div class="tl-content"><h4>Freelance Graphic Designer</h4><p>Logo &amp; Brand Identity · Clienti privati, attività commerciali e progetto internazionale in Albania.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">Nov 2024 — Feb 2025</div>
+            <div class="tl-content"><h4>Tutor PNRR — Web Design</h4><p>IIS A. Volta · Progetto Next Generation EU. Docenza a studenti nella realizzazione di siti web tramite WordPress.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024</div>
+            <div class="tl-content"><h4>Stage — Web Designer</h4><p>Semotion Agency · San Severo. Progettazione e sviluppo di siti web in ambiente professionale.</p></div>
+          </div>
+        </div>
+        <div class="tl-group reveal">
+          <div class="tl-group-label">Formazione</div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024 — in corso</div>
+            <div class="tl-content"><h4>Corso di Graphic Design</h4><p>Infobasic</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022 — 2024</div>
+            <div class="tl-content"><h4>Diploma Web Designer &amp; Developer</h4><p>Infobasic</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <div class="tl-content"><h4>Certificazione AI</h4><p>Orientamento, innovazione e competenze digitali</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2017</div>
+            <div class="tl-content"><h4>Diploma Sistemi Informativi Aziendali</h4><p>ISIS Luigi Di Maggio</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Alexia Avram</span><span>Graphic &amp; Web Designer</span><span>Pescara, Italia</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

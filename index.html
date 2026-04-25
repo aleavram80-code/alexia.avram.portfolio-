@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Alexia Avram — Portfolio</title>
+  <meta name="description" content="Portfolio di Alexia Avram — Graphic Designer e Web Designer specializzata in brand identity e comunicazione visiva."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body class="is-loading">
+
+  <div class="page-overlay" id="pageOverlay"></div>
+
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <span class="loader-name">Alexia Avram</span>
+      <div class="loader-track"><div class="loader-bar" id="loaderBar"></div></div>
+    </div>
+  </div>
+
+  <div class="cursor-ring" id="cursorRing"></div>
+  <div class="cursor-dot"  id="cursorDot"></div>
+  <canvas id="grain" class="grain"></canvas>
+
+  <header class="nav" id="nav">
+    <a class="nav-logo" href="index.html">Alexia Avram</a>
+    <nav class="nav-links">
+      <a href="index.html" class="nav-link active">Home</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="work.html"  class="nav-link">Progetti</a>
+    </nav>
+    <a href="assets/cv/Alexia_Avram_CV.pdf" target="_blank" class="btn-cv">Download CV</a>
+    <button class="nav-burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </header>
+
+  <div class="mob-menu" id="mobMenu">
+    <ul>
+      <li><a href="index.html"  class="mob-link">Home</a></li>
+      <li><a href="about.html"  class="mob-link">About</a></li>
+      <li><a href="work.html"   class="mob-link">Progetti</a></li>
+      <li><a href="assets/cv/Alexia_Avram_CV.pdf" target="_blank" class="mob-link">Download CV</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+
+    <div class="hero-eyebrow">
+      <span class="eyebrow-bar"></span>Portfolio
+    </div>
+
+    <!-- Type block -->
+    <div class="hero-type">
+      <div class="hz-mask"><h1 class="hz-l1">Graphic</h1></div>
+      <div class="hz-mask"><div class="hz-l2">&amp; Web</div></div>
+      <div class="hz-mask hz-mask--sm"><div class="hz-l3">Designer.</div></div>
+    </div>
+
+    <!-- Sottile etichetta verticale -->
+    <div class="hero-aside" aria-hidden="true">
+      <span>Graphic &amp; Web Designer</span>
+      <span class="hero-aside-dot">✦</span>
+      <span>Pescara 2026</span>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="hero-foot">
+      <div class="hero-loc"><span class="tag-pulse"></span>Pescara, Italia</div>
+      <div class="hero-btns">
+        <a href="work.html" class="btn-primary mag">Esplora i progetti</a>
+        <a href="about.html" class="btn-ghost mag">Chi sono →</a>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-wrap" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Brand Identity</span><span class="msep">✦</span><span>Logo Design</span><span class="msep">✦</span>
+      <span>UI / UX</span><span class="msep">✦</span><span>Web Design</span><span class="msep">✦</span>
+      <span>Packaging</span><span class="msep">✦</span><span>Social Media</span><span class="msep">✦</span>
+      <span>Adobe Suite</span><span class="msep">✦</span><span>Figma</span><span class="msep">✦</span>
+      <span>Brand Identity</span><span class="msep">✦</span><span>Logo Design</span><span class="msep">✦</span>
+      <span>UI / UX</span><span class="msep">✦</span><span>Web Design</span><span class="msep">✦</span>
+      <span>Packaging</span><span class="msep">✦</span><span>Social Media</span><span class="msep">✦</span>
+      <span>Adobe Suite</span><span class="msep">✦</span><span>Figma</span><span class="msep">✦</span>
+    </div>
+  </div>
+
+  <!-- ABOUT PREVIEW -->
+  <section class="home-about">
+    <div class="home-about-inner">
+      <div class="ha-photo reveal">
+        <div class="ha-frame">
+          <img src="assets/profile/photo.png" alt="Alexia Avram" loading="lazy" decoding="async"/>
+        </div>
+        <div class="ha-tag"><span class="tag-pulse"></span>Pescara, Italia</div>
+      </div>
+      <div class="ha-text reveal">
+        <p class="label">About</p>
+        <h2 class="section-title">Graphic e Web Designer</h2>
+        <p class="ha-body">Solida formazione in Graphic Design e Web Design, orientata alla brand identity e alla comunicazione visiva, branding, 3D e video. Approccio versatile tra stili eleganti e soluzioni bold e d'impatto.</p>
+        <p class="ha-body">Forte attenzione ai dettagli e capacità di interpretare le esigenze del cliente. Integro competenze nell'utilizzo degli strumenti di Intelligenza Artificiale applicati al design.</p>
+        <a href="about.html" class="btn-ghost mag ha-cta">Scopri di più →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TIMELINE -->
+  <section class="timeline-section">
+    <div class="timeline-inner">
+      <div class="reveal">
+        <p class="label">Percorso</p>
+        <h2 class="section-title">Esperienze &amp;<br/><em>Formazione</em></h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-group reveal">
+          <div class="tl-group-label">Esperienze</div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024 — in corso</div>
+            <div class="tl-content"><h4>Freelance Graphic Designer</h4><p>Logo &amp; Brand Identity · Clienti privati, attività commerciali e progetto internazionale in Albania.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">Nov 2024 — Feb 2025</div>
+            <div class="tl-content"><h4>Tutor PNRR — Web Design</h4><p>IIS A. Volta · Progetto Next Generation EU. Docenza a studenti nella realizzazione di siti web tramite WordPress.</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024</div>
+            <div class="tl-content"><h4>Stage — Web Designer</h4><p>Semotion Agency · San Severo. Progettazione e sviluppo di siti web in ambiente professionale.</p></div>
+          </div>
+        </div>
+        <div class="tl-group reveal">
+          <div class="tl-group-label">Formazione</div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2024 — in corso</div>
+            <div class="tl-content"><h4>Corso di Graphic Design</h4><p>Infobasic</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2022 — 2024</div>
+            <div class="tl-content"><h4>Diploma Web Designer &amp; Developer</h4><p>Infobasic</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2025</div>
+            <div class="tl-content"><h4>Certificazione AI</h4><p>Orientamento, innovazione e competenze digitali</p></div>
+          </div>
+          <div class="tl-item">
+            <div class="tl-dot"></div>
+            <div class="tl-year">2017</div>
+            <div class="tl-content"><h4>Diploma Sistemi Informativi Aziendali</h4><p>ISIS Luigi Di Maggio</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="home-skills">
+    <div class="hs-inner">
+      <div class="hs-header reveal">
+        <p class="label">Competenze</p>
+        <h2 class="section-title">Strumenti &amp;<br/><em>tecnologie</em></h2>
+      </div>
+      <div class="hs-cols">
+        <div class="hs-col reveal">
+          <h3 class="hs-cat">Design</h3>
+          <div class="hs-tags">
+            <span>Adobe Illustrator</span><span>Adobe Photoshop</span><span>Figma</span>
+            <span>Adobe InDesign</span><span>Adobe Premiere</span><span>Adobe Dimension</span>
+            <span>Blender</span><span>Canva</span>
+          </div>
+        </div>
+        <div class="hs-col reveal">
+          <h3 class="hs-cat">Web</h3>
+          <div class="hs-tags">
+            <span>WordPress</span><span>HTML &amp; CSS</span><span>JavaScript</span>
+            <span>UI / UX Design</span><span>Responsive Design</span>
+          </div>
+        </div>
+        <div class="hs-col reveal">
+          <h3 class="hs-cat">Altro</h3>
+          <p class="hs-subcat">Tools</p>
+          <div class="hs-tags">
+            <span>Strumenti AI</span><span>Notion</span>
+          </div>
+          <p class="hs-subcat">Soft Skills</p>
+          <div class="hs-tags">
+            <span class="soft">Problem Solving</span>
+            <span class="soft">Leadership</span>
+            <span class="soft">Multitasking</span>
+            <span class="soft">Team Work</span>
+            <span class="soft">Flessibilità</span>
+            <span class="soft">Adattamento</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW PROJECTS -->
+  <section class="home-preview">
+    <div class="hp-header reveal">
+      <div><p class="label">Selected Work</p><h2 class="section-title">Ultimi progetti</h2></div>
+      <a href="work.html" class="hp-all">Vedi tutti →</a>
+    </div>
+    <div class="hp-grid">
+      <a href="work.html" class="hp-card reveal" data-delay="0">
+        <div class="hp-img"><img src="assets/projects/manavi/grafica/1-vitaelis/cover.jpg" alt="Vitaelis" loading="lazy"/></div>
+        <div class="hp-info"><span class="card-tag">Brand Identity · Packaging</span><h3>Vitaelis</h3></div>
+      </a>
+      <a href="work.html" class="hp-card reveal" data-delay="1">
+        <div class="hp-img"><img src="assets/projects/manavi/grafica/2-review/cover.jpg" alt="Review" loading="lazy"/></div>
+        <div class="hp-info"><span class="card-tag">Logo · Brand Identity</span><h3>Review</h3></div>
+      </a>
+      <a href="work.html" class="hp-card reveal" data-delay="2">
+        <div class="hp-img"><img src="assets/projects/manavi/grafica/5-zipeatz/cover.jpg" alt="ZipEatz" loading="lazy"/></div>
+        <div class="hp-info"><span class="card-tag">Brand Identity · Social</span><h3>ZipEatz</h3></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-inner reveal">
+      <p class="label">Contatti</p>
+      <h2 class="section-title">Parliamo di<br/><em>design</em></h2>
+      <a class="contact-email" href="mailto:aleavram80@gmail.com">
+        <span>aleavram80@gmail.com</span><span class="email-arr">↗</span>
+      </a>
+      <p class="contact-sub">Pescara, Italia</p>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span>© 2026 Alexia Avram</span><span>Graphic &amp; Web Designer</span><span>Pescara, Italia</span>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
